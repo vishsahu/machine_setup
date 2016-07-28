@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/dbc/pa-dbc1117/svishal/vdfs/bora/vdfs/vdfsd'
+let g:netrw_dirhist_2='/dbc/pa-dbc1117/svishal/vdfs/bora/vdfs/core'
+let g:netrw_dirhist_3='/dbc/pa-dbc1117/svishal/vdfs/bora/vdfs/backend'
