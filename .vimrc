@@ -30,6 +30,8 @@ set ruler
 set showcmd
 :map! <F3> <C-R>=strftime('%c')<CR>
 
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+match OverLength /\%81v.\+/
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$\| \+\ze\t/
 set tags=tags;/
