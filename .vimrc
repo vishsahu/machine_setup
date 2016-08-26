@@ -1,10 +1,21 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'valloric/youcompleteme'
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Put your non-Plugin stuff after this line
+
 colorscheme molokai
 set laststatus=2
 set noswapfile
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-set nocompatible
 
 set tabstop=8
 set shiftwidth=3
