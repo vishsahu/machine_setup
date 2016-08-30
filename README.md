@@ -4,6 +4,7 @@ at their home directory and then can customize it as per their need.
 
 Usage:
 
+$ cd ~/
 $ git clone https://github.com/vishsahu/machine_setup.git
 $ cd machine_setup
 $ ./setup.sh
