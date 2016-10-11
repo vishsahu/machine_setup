@@ -34,8 +34,8 @@ syntax on
 filetype on
 au BufNewFile,BufRead *.da set filetype=python
 
-autocmd bufnewfile *.c so ./c_template.txt
-autocmd bufnewfile *.cpp so ./cpp_template.txt
+autocmd bufnewfile *.c so ~/c_template.txt
+autocmd bufnewfile *.cpp so ~/cpp_template.txt
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
