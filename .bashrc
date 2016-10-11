@@ -1,4 +1,12 @@
 alias l='ls -larth'
 alias h='history'
 alias c='clear'
+alias open='xdg-open'
+alias vim='gvim'
+alias cdg='cd /home/vishal/git'
+alias cds='cd /media/vishal/Windows/FUNZONE/stdy'
+alias py='python3'
 HISTSIZE=1000
+export PATH=/media/vishal/Windows/FUNZONE/stdy/async_systems/DistAlgo-1.0.0b17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mts/git/bin:/home/vishal/bin:/build/apps/bin
+export LD_LIBRARY_PATH=/home/vishal/git/staticfs-rick/bin/libs
+export PYTHONPATH=/media/vishal/Windows/FUNZONE/stdy/async_systems/DistAlgo-1.0.0b17

@@ -1,0 +1,15 @@
+:insert
+/*
+ * About:
+ */
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main(int argc, char* argv[]) {
+    // code here
+
+    return 0;
+}
+.

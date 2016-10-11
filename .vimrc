@@ -1,29 +1,19 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'valloric/youcompleteme'
-call vundle#end()            " required
-filetype plugin indent on    " required
-" Put your non-Plugin stuff after this line
-
+set nocompatible
 colorscheme molokai
 set laststatus=2
 set noswapfile
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
+set guifont=Monospace\ 13
 
 set tabstop=8
-set shiftwidth=3
-set wrapmargin=0
+set shiftwidth=4
+"set wrapmargin=0
 set backspace=2
-set textwidth=79
+"set textwidth=79
 set smarttab
-set expandtab        " expand tabs to spaces
+set expandtab
 set smartindent
 set autoindent
 set cindent
@@ -39,7 +29,13 @@ set hlsearch
 set history=1000
 set ruler
 set showcmd
-:map! <F3> <C-R>=strftime('%c')<CR>
+
+syntax on
+filetype on
+au BufNewFile,BufRead *.da set filetype=python
+
+autocmd bufnewfile *.c so ./c_template.txt
+autocmd bufnewfile *.cpp so ./cpp_template.txt
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
@@ -51,6 +47,7 @@ set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 set ttyfast
+autocmd BufWritePre * %s/\s\+$//e
 autocmd BufEnter * silent! lcd %:p:h
-"set mouse=a
+set mouse=a
 
