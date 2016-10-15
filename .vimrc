@@ -1,5 +1,5 @@
 set nocompatible
-"colorscheme molokai"
+colorscheme molokai
 set laststatus=2
 set noswapfile
 set enc=utf-8
@@ -7,16 +7,15 @@ set fenc=utf-8
 set termencoding=utf-8
 set guifont=Monospace\ 13
 
-set tabstop=8
+"set tabstop=8"
 set shiftwidth=4
-"set wrapmargin=0
+"set wrapmargin=0"
 set backspace=2
-"set textwidth=79
+set textwidth=79
 set smarttab
-"set expandtab
+set expandtab
 set smartindent
 set autoindent
-set cindent
 set comments=sr:/*,mb:*,el:*/
 
 set noerrorbells
