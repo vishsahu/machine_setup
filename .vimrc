@@ -23,6 +23,7 @@ set nobackup
 set t_Co=256
 set number
 set incsearch
+set ignorecase
 set showmatch
 set hlsearch
 set history=1000
