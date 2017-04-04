@@ -8,4 +8,5 @@ ln -s $PWD/.profile $HOME/.profile
 ln -s $PWD/.vim $HOME/.vim
 ln -s $PWD/cpp_template.txt $HOME/cpp_template.txt
 ln -s $PWD/c_template.txt $HOME/c_template.txt
+ln -s $PWD/git-prompt.sh $HOME/git-prompt.sh
 source $HOME/.profile
