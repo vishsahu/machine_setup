@@ -10,4 +10,4 @@
 
 source $HOME/.vimrc
 source $HOME/.bashrc
-source $HOME/.git-prompt.sh
+source $HOME/git-prompt.sh
