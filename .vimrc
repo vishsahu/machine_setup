@@ -41,12 +41,6 @@ highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$\| \+\ze\t/
-set tags=tags;/
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
-set ttyfast
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufEnter * silent! lcd %:p:h
 set mouse=a
