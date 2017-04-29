@@ -21,12 +21,13 @@ alias cdl='cd $HOME/work/onefs/isilon/lib'
 alias cdb='cd $HOME/work/onefs/isilon/bin'
 
 # remote login aliases
-alias vclient='ssh vishal@10.25.71.181'
+alias vclient='ssh vishal@10.25.71.181 -Y'
 alias c1='ssh root@10.25.103.159'
 alias c2='ssh root@10.25.103.160'
 alias c3='ssh root@10.25.103.161'
 alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
+alias esxvm='ssh vsahu@10.28.51.101 -Y'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
