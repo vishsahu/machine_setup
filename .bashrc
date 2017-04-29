@@ -12,6 +12,7 @@ alias h='history'
 alias c='clear'
 alias vim='gvim'
 alias py='python3'
+alias open='xdg-open'
 
 # path short-hands
 alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
@@ -28,6 +29,7 @@ alias c3='ssh root@10.25.103.161'
 alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
 alias esxvm='ssh vsahu@10.28.51.101 -Y'
+alias ducttape='ssh ducttape.sea1.west.isilon.com'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
