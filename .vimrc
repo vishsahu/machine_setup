@@ -1,3 +1,4 @@
+set tags=,tags;
 set nocompatible
 colorscheme molokai
 set laststatus=2

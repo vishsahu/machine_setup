@@ -3,7 +3,7 @@ HISTSIZE=1000
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$$(__git_ps1)\$\n'
 export PATH=$HOME/work/tools/backup/dinostor/ndmpTest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 export LD_LIBRARY_PATH=/usr/local/lib
-export CSCOPE_EDITOR=gvim
+export CSCOPE_EDITOR=vim
 export EDITOR=vim
 
 # commnad short-hands
