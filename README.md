@@ -3,11 +3,11 @@ This repository is quick collection of essential setup required by any unix base
 
 ####Usage:
 
-`$ cd ~/`  
-`$ git clone https://github.com/vishsahu/machine_setup.git`  
-`$ cd machine_setup`  
-`$ ./setup.sh`  
+`$ cd ~/`
+`$ git clone https://github.com/vishsahu/machine_setup.git`
+`$ cd machine_setup`
+`$ ./setup.sh`
 
-####Warning:
+####Side-effect:
 
-This environment removes your existing `.profile`, `.vimrc` etc. Please be careful while using.
+This environment saves exisiting configuration files at ~/mconfig_backup directory.
