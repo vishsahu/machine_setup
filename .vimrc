@@ -9,7 +9,7 @@ set termencoding=utf-8
 set guifont=Monospace\ 13
 
 "set tabstop=8"
-set shiftwidth=4
+set shiftwidth=8
 "set wrapmargin=0"
 set backspace=2
 set textwidth=79
