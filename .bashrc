@@ -1,8 +1,8 @@
 HISTSIZE=1000
 #export PS1="\t \u@\h:\w$$(__git_ps1)\$\n"
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$$(__git_ps1)\$\n'
-export PATH=$HOME/work/tools/backup/dinostor/ndmpTest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-export LD_LIBRARY_PATH=/usr/local/lib
+#export PATH=$HOME/work/tools/backup/dinostor/ndmpTest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+#export LD_LIBRARY_PATH=/usr/local/lib
 export CSCOPE_EDITOR=vim
 export EDITOR=vim
 
@@ -27,6 +27,11 @@ alias vc100='ssh vsahu@10.25.68.170 -Y'
 alias c1='ssh root@10.25.103.159'
 alias c2='ssh root@10.25.103.160'
 alias c3='ssh root@10.25.103.161'
+alias c1r='ssh root@10.25.70.133'
+alias c2r='ssh root@10.25.70.134'
+alias c3r='ssh root@10.25.70.135'
+alias c4r='ssh root@10.25.70.136'
+alias c5r='ssh root@10.25.70.137'
 alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
 alias esxvm='ssh vsahu@10.28.51.101 -Y'
