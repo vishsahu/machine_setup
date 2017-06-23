@@ -12,7 +12,7 @@ set guifont=Monospace\ 13
 set shiftwidth=8
 "set wrapmargin=0"
 set backspace=2
-set textwidth=79
+"set textwidth=79"
 set smarttab
 set expandtab
 set smartindent
