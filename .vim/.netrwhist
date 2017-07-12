@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/vishal/git/staticfs-rick/bin/configs'
 let g:netrw_dirhist_2='/home/vishal/git/staticfs-rick/bin'
 let g:netrw_dirhist_3='/home/vishal/git/staticfs-rick/bin/configs'
 let g:netrw_dirhist_4='/media/vishal/Windows/FUNZONE/stdy/async_systems/DistAlgo-1.0.0b17/examples/pingpong'
 let g:netrw_dirhist_5='/home/vishal/git/staticfs-rick'
 let g:netrw_dirhist_6='/home/vishal/git/staticfs-rick/src'
+let g:netrw_dirhist_7='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/doc-src/3/protocols/ndmp/contexts'
+let g:netrw_dirhist_8='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/doc-src/3/protocols/ndmp/contexts/backup'

@@ -18,6 +18,7 @@ alias open='xdg-open'
 alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
 alias cds='cd /media/vishal/Windows/FUNZONE/stdy'
 alias cdw='cd $HOME/work'
+alias cdo='cd $HOME/work/onefs'
 alias cdl='cd $HOME/work/onefs/isilon/lib'
 alias cdb='cd $HOME/work/onefs/isilon/bin'
 
