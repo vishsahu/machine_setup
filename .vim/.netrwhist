@@ -1,2 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/vsahu/work/onefs/isilon/bin/isi_ndmp_d'
+let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/bin/isi_ndmp_d/test'
+let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/lib/isi_ndmpbrm2'

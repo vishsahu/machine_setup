@@ -14,6 +14,7 @@ alias vim='gvim'
 alias py='python3'
 alias open='xdg-open'
 alias gc='git checkout'
+alias gb='git branch'
 
 # path short-hands
 alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
