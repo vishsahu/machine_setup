@@ -26,7 +26,7 @@ alias cdb='cd $HOME/work/onefs/isilon/bin'
 
 # remote login aliases
 alias vc100='ssh vsahu@10.25.70.118 -X'
-alias c1='ssh root@10.25.70.96'
+alias c1='ssh root@10.25.69.34'
 alias c1r='ssh root@10.7.135.45'
 alias c2r='ssh root@10.7.135.46'
 alias c3r='ssh root@10.7.135.47'
