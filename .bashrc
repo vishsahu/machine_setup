@@ -12,9 +12,11 @@ alias h='history'
 alias c='clear'
 alias vim='gvim'
 alias py='python3'
-alias open='xdg-open'
+
+# git shorthands
 alias gc='git checkout'
 alias gb='git branch'
+alias gs='git status'
 
 # path short-hands
 alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
@@ -26,10 +28,9 @@ alias cdb='cd $HOME/work/onefs/isilon/bin'
 
 # remote login aliases
 alias vc100='ssh vsahu@10.25.70.118 -X'
-alias c1='ssh root@10.25.69.34'
-alias c1r='ssh root@10.7.135.45'
-alias c2r='ssh root@10.7.135.46'
-alias c3r='ssh root@10.7.135.47'
+alias c1='ssh root@10.25.71.39'
+alias c2='ssh root@10.25.71.40'
+alias c3='ssh root@10.25.71.41'
 alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
 alias esxvm='ssh vsahu@10.28.51.101 -Y'
