@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/vsahu/work/onefs/isilon/bin/isi_ndmp_d'
-let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/bin/isi_ndmp_d/test'
-let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/lib/isi_ndmpbrm2'
-let g:netrw_dirhist_4='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/isi_papi_ndmp'
-let g:netrw_dirhist_5='/home/vsahu/work/onefs/isilon/lib/isi_platform_api'
-let g:netrw_dirhist_6='/home/vsahu/work/onefs/isilon/bin/isi_ndmp_d'
-let g:netrw_dirhist_7='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/isi_papi_ndmp'
-let g:netrw_dirhist_8='/home/vsahu/work/onefs/isilon/lib/isi_gconfig'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/isi_papi_ndmp'
+let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/scripts/isi_webui/static/v2/scripts/app/controller/ndmp'
+let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/scripts/isi_webui/static/v2/scripts/app/controller/ndmp/devices'
+let g:netrw_dirhist_4='/home/vsahu/work/onefs'

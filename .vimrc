@@ -40,8 +40,8 @@ autocmd bufnewfile *.cpp so ~/cpp_template.txt
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$\| \+\ze\t/
+"highlight WhitespaceEOL ctermbg=red guibg=red
+"match WhitespaceEOL /\s\+$\| \+\ze\t/
 set tags=tags;/
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
