@@ -13,10 +13,12 @@ alias c='clear'
 alias vim='gvim'
 alias py='python3'
 
-# git shorthands
+# useful shorthands
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias docker='sudo docker'
+alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
 
 # path short-hands
 alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
