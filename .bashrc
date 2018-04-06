@@ -7,6 +7,8 @@ export CSCOPE_EDITOR=vim
 export EDITOR=vim
 export WORK_DIR=/home/vsahu
 
+source $HOME/git-prompt.sh
+
 # commnad short-hands
 alias l='ls -larth'
 alias h='history'
