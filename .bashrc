@@ -7,8 +7,6 @@ export CSCOPE_EDITOR=vim
 export EDITOR=vim
 export WORK_DIR=/home/vsahu
 
-source $HOME/git-prompt.sh
-
 # commnad short-hands
 alias l='ls -larth'
 alias h='history'
@@ -16,12 +14,14 @@ alias c='clear'
 alias py='python3'
 alias vi='vim'
 
-# shorthands
+# useful shorthands
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias dvl='dt vcluster list'
 alias dvd='dt vcluster delete'
+alias docker='sudo docker'
+alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
 
 # path short-hands
 alias cdc='cd $WORK_DIR/work/tools/backup/dinostor/ndmpTest/bin'
@@ -31,7 +31,8 @@ alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
 alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
 
 # remote login aliases
-alias rdev='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'
+alias rdsea='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'
+alias rddur='ssh vsahu@remotedev05.prod.rdu1.west.isilon.com -X'
 alias vc100='ssh vsahu@10.25.70.118 -X'
 alias c1='ssh root@10.25.71.39'
 alias c2='ssh root@10.25.71.40'
