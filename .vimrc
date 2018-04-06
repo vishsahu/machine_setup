@@ -50,5 +50,5 @@ set tags+=~/.vim/tags/qt4
 set ttyfast
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufEnter * silent! lcd %:p:h
-set mouse=a
+"set mouse=a
 

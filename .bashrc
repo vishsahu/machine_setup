@@ -5,26 +5,30 @@ export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\
 #export LD_LIBRARY_PATH=/usr/local/lib
 export CSCOPE_EDITOR=vim
 export EDITOR=vim
+export WORK_DIR=/home/vsahu
+
+source $HOME/git-prompt.sh
 
 # commnad short-hands
 alias l='ls -larth'
 alias h='history'
 alias c='clear'
-alias vim='gvim'
 alias py='python3'
+alias vi='vim'
 
-# git shorthands
+# shorthands
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias dvl='dt vcluster list'
+alias dvd='dt vcluster delete'
 
 # path short-hands
-alias cdc='cd $HOME/work/tools/backup/dinostor/ndmpTest/bin'
-alias cds='cd /media/vishal/Windows/FUNZONE/stdy'
-alias cdw='cd $HOME/work'
-alias cdo='cd $HOME/work/onefs'
-alias cdl='cd $HOME/work/onefs/isilon/lib'
-alias cdb='cd $HOME/work/onefs/isilon/bin'
+alias cdc='cd $WORK_DIR/work/tools/backup/dinostor/ndmpTest/bin'
+alias cdw='cd $WORK_DIR/work'
+alias cdo='cd $WORK_DIR/work/onefs'
+alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
+alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
 
 # remote login aliases
 alias rdev='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'

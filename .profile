@@ -8,9 +8,11 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+#source $HOME/git-prompt.sh
+#exec /bin/bash
+
 # this is for remote logins GUI opening (X11 forwarding)
 xhost +
 
-source $HOME/.vimrc
 source $HOME/.bashrc
-source $HOME/git-prompt.sh
+source $HOME/.vimrc

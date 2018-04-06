@@ -25,4 +25,4 @@ do
     fi
 done
 
-source $HOME/.profile
+#source $HOME/.profile
