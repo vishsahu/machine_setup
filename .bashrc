@@ -31,6 +31,7 @@ alias cdw='cd $WORK_DIR/work'
 alias cdo='cd $WORK_DIR/work/onefs'
 alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
 alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
+alias cdt='cd $WORK_DIR/work/onefs/isilon/test/syncIQ'
 
 # remote login aliases
 alias rdsea='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'
@@ -43,7 +44,7 @@ alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
 alias esxvm='ssh vsahu@10.28.51.101 -Y'
 alias ducttape='ssh ducttape.sea1.west.isilon.com'
-alias qavm='ssh vsahu@qavm21.prod.sjc1.west.isilon.com'
+alias qavm='ssh vsahu@qavm01.prod.sea1.west.isilon.com'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

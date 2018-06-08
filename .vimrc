@@ -1,6 +1,7 @@
 set tags=,tags;
 set nocompatible
-colorscheme molokai
+"colorscheme molokai
+colorscheme morning
 set laststatus=2
 set noswapfile
 set enc=utf-8
