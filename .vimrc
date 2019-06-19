@@ -1,7 +1,7 @@
 set tags=,tags;
 set nocompatible
-"colorscheme molokai
-colorscheme morning
+colorscheme molokai
+"colorscheme morning
 set laststatus=2
 set noswapfile
 set enc=utf-8
@@ -9,9 +9,12 @@ set fenc=utf-8
 set termencoding=utf-8
 set guifont=Monospace\ 13
 set shiftwidth=8
-"set wrapmargin=0
 set backspace=2
-"set textwidth=79
+
+""following 2 commands enforce column width to 80 chars
+set textwidth=80
+set wrapmargin=2
+
 set smartindent
 set autoindent
 set comments=sr:/*,mb:*,el:*/
@@ -28,11 +31,13 @@ set ruler
 set showcmd
 set mouse=a
 
+highlight OverLength ctermbg=red ctermfg=white guibg=#FFD9D9
+match OverLength /\%81v.\+/
+set colorcolumn=80
+
 syntax on
 filetype on
 
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-"match OverLength /\%81v.\+/
 "highlight WhitespaceEOL ctermbg=red guibg=red
 "match WhitespaceEOL /\s\+$\| \+\ze\t/
 set tags=tags;/

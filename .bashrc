@@ -6,6 +6,11 @@ export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\
 export CSCOPE_EDITOR=vim
 export EDITOR=vim
 export WORK_DIR=/home/vsahu
+export QA=/usr/local/qa
+export TOOLS=/usr/local/tools
+export QALIB=$QA/lib
+export PERL5LIB=$QA/lib
+export PATH=$QA/bin:$QA/tests:$QA/linux/bin:$TOOLS:$PATH
 
 source $HOME/git-prompt.sh
 
@@ -20,18 +25,23 @@ alias vi='vim'
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias gcp='git cherry-pick'
+alias gfp='git fetch release-pipeline'
 alias dvl='dt vcluster list'
 alias dvd='dt vcluster delete'
 alias docker='sudo docker'
-alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
+#alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
 
 # path short-hands
 alias cdc='cd $WORK_DIR/work/tools/backup/dinostor/ndmpTest/bin'
 alias cdw='cd $WORK_DIR/work'
+alias cdw1='cd $WORK_DIR/work1'
 alias cdo='cd $WORK_DIR/work/onefs'
 alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
 alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
 alias cdt='cd $WORK_DIR/work/onefs/isilon/test/syncIQ'
+alias pyt='cd $WORK_DIR/work/onefs/isilon/test-qa/tests/worm'
+alias wlib='cd $WORK_DIR/work/onefs/isilon/test-qa/lib/qa/worm'
 
 # remote login aliases
 alias rdsea='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'
@@ -44,6 +54,7 @@ alias home='ssh vishal@10.13.41.37'
 alias work='ssh vsahu@10.203.107.15'
 alias esxvm='ssh vsahu@10.28.51.101 -Y'
 alias ducttape='ssh ducttape.sea1.west.isilon.com'
+alias qavmd='ssh vsahu@qavm-d05.prod.sea1.west.isilon.com'
 alias qavm='ssh vsahu@qavm01.prod.sea1.west.isilon.com'
 
 # enable color support of ls and also add handy aliases
@@ -134,3 +145,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/ifs/home/vsahu/.sdkman"
+[[ -s "/ifs/home/vsahu/.sdkman/bin/sdkman-init.sh" ]] && source "/ifs/home/vsahu/.sdkman/bin/sdkman-init.sh"

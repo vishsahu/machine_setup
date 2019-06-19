@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/vsahu/work/onefs/isilon/lib/isi_migrate/config'
-let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/lib/isi_migrate'
-let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/lib/isi_platform_api/isi_papi_worm'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/vsahu/work/imp_files/patches'
+let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/lib/isi_migrate/config'
+let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/test-qa/tests/cli/domains/worm'
+let g:netrw_dirhist_4='/home/vsahu/work/onefs/isilon/test-qa/tests/worm'
+let g:netrw_dirhist_5='/home/vsahu/work/onefs/isilon/test-qa/lib/qa/siq'
