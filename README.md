@@ -3,9 +3,9 @@ This repository is quick collection of essential setup required by any unix base
 
 ####Usage:
 
-`$ cd ~/`
-`$ git clone https://github.com/vishsahu/machine_setup.git`
-`$ cd machine_setup`
+`$ cd ~/`\
+`$ git clone https://github.com/vishsahu/machine_setup.git`\
+`$ cd machine_setup`\
 `$ ./setup.sh`
 
 ####Side-effect:
