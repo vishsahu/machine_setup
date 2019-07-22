@@ -1,7 +1,10 @@
 set tags=,tags;
 set nocompatible
+autocmd ColorScheme * highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 colorscheme molokai
-"colorscheme morning
+" colorscheme morning
+match OverLength /\%81v.\+/
+
 set laststatus=2
 set noswapfile
 set enc=utf-8
@@ -11,7 +14,7 @@ set guifont=Monospace\ 13
 set shiftwidth=8
 set backspace=2
 
-""following 2 commands enforce column width to 80 chars
+" following 2 commands enforce column width to 80 chars
 set textwidth=80
 set wrapmargin=2
 
@@ -31,24 +34,20 @@ set ruler
 set showcmd
 set mouse=a
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#FFD9D9
-match OverLength /\%81v.\+/
 set colorcolumn=80
 
 syntax on
 filetype on
 
-"highlight WhitespaceEOL ctermbg=red guibg=red
-"match WhitespaceEOL /\s\+$\| \+\ze\t/
 set tags=tags;/
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 set ttyfast
-"set mouse=a
+" set mouse=a
 
-"autocmd BufWritePre * %s/\s\+$//e
-"autocmd BufEnter * silent! lcd %:p:h
+" autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufEnter * silent! lcd %:p:h
 autocmd bufnewfile *.c so ~/c_template.txt
 autocmd bufnewfile *.cpp so ~/cpp_template.txt
