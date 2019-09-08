@@ -14,7 +14,7 @@ export PATH=$QA/bin:$QA/tests:$QA/linux/bin:$TOOLS:$PATH
 
 source $HOME/git-prompt.sh
 
-# commnad short-hands
+# some commnad short-hands
 alias l='ls -larth'
 alias h='history'
 alias c='clear'
