@@ -11,6 +11,8 @@ export TOOLS=/usr/local/tools
 export QALIB=$QA/lib
 export PERL5LIB=$QA/lib
 export PATH=$QA/bin:$QA/tests:$QA/linux/bin:$TOOLS:$PATH
+export PATH=$PATH:/usr/local/tools/idea-IC-192.5728.98/bin
+export PATH=$PATH:/usr/local/tools/clion-2019.2/bin
 
 source $HOME/git-prompt.sh
 
@@ -33,10 +35,12 @@ alias docker='sudo docker'
 #alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
 
 # path short-hands
+alias cdwt='cd $HOME/wiki/tasks'
 alias cdc='cd $WORK_DIR/work/tools/backup/dinostor/ndmpTest/bin'
 alias cdw='cd $WORK_DIR/work'
 alias cdw1='cd $WORK_DIR/work1'
 alias cdo='cd $WORK_DIR/work/onefs'
+alias cdd='cd $WORK_DIR/work/tech-doc/projects/lhotse/design'
 alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
 alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
 alias cdt='cd $WORK_DIR/work/onefs/isilon/test/syncIQ'

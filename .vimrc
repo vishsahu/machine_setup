@@ -1,3 +1,4 @@
+set spell
 set tags=,tags;
 set nocompatible
 autocmd ColorScheme * highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -5,12 +6,13 @@ colorscheme molokai
 " colorscheme morning
 match OverLength /\%81v.\+/
 
+set autochdir
 set laststatus=2
 set noswapfile
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-set guifont=Monospace\ 13
+set guifont=Monospace\ 14
 set shiftwidth=8
 set backspace=2
 
