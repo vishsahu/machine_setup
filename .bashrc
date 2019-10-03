@@ -16,7 +16,7 @@ export PATH=$PATH:/usr/local/tools/clion-2019.2/bin
 
 source $HOME/git-prompt.sh
 
-# commnad short-hands
+# some commnad short-hands
 alias l='ls -larth'
 alias h='history'
 alias c='clear'
