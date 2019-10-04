@@ -26,7 +26,7 @@ while true; do
 		totalmem=$(echo "$totalmem + $mem" | bc -l)
 		count=$[$count + 1]
 		processing=1
-		sleep 5
+		sleep 1
 	else
 		echo "Unexpected return code $? returned, exiting."
 		exit 1
