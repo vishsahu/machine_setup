@@ -24,15 +24,19 @@ alias py='python3'
 alias vi='vim'
 
 # useful shorthands
+alias gl='git log --decorate'
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias gcp='git cherry-pick'
-alias gfp='git fetch release-pipeline'
+alias gri='git rebase -i'
+
+# office specific
+# ==================
+alias chrome='chromium-browser google-chrome --proxy-server="https://proxy-ip:proxy-port"'
 alias dvl='dt vcluster list'
 alias dvd='dt vcluster delete'
 alias docker='sudo docker'
-#alias dt='dt --api-server ducttape-api.prod.sea1.west.isilon.com'
 
 # path short-hands
 alias cdwt='cd $HOME/wiki/tasks'

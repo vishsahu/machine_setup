@@ -2,6 +2,7 @@ import sys
 import psutil
 import time
 
+got_pid = False
 pid = 0
 tick = 0
 counter=[]
@@ -11,12 +12,14 @@ if len(sys.argv) < 2:
 	print('Usage:\npython profile_process.py process_name\n')
 	sys.exit(0)
 
-for proc in psutil.process_iter(attrs=['pid','name']):
-	if proc.info['name'] == sys.argv[1]:
-		pid = proc.info['pid']
-		break
+while got_pid is False:
+	for proc in psutil.process_iter(attrs=['pid','name']):
+		if proc.info['name'] == sys.argv[1]:
+			pid = proc.info['pid']
+			got_pid = True
+			break
 
-print('pid of process {} is {}, waiting for it\'s termination.\n'
+print('pid of process {} is {}, gathering CPU and memory consumption.\n'
     .format(sys.argv[1], pid))
 
 p = psutil.Process(pid)
@@ -31,9 +34,8 @@ while psutil.pid_exists(pid):
 avg_cpu = sum(cpu) / tick
 avg_mem = sum(mem) / tick
 print('Profiling of {}({}) finished.\n'
-    'Profiling time:{} seconds\n'
     'CPU consumption:{}%\n'
-    'Memory consumption:{}.'.format(sys.argv[1], pid, tick, avg_cpu, avg_mem))
+    'Memory consumption:{}.'.format(sys.argv[1], pid, avg_cpu, avg_mem))
 
 # plot the graphs
 

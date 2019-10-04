@@ -1,9 +1,15 @@
+" Map enter/shift-enter to insert empty line below/above in command mode
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+" Map f to format a paragraph
+map f gwip
+
 set spell
 set tags=,tags;
 set nocompatible
 autocmd ColorScheme * highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 colorscheme molokai
-" colorscheme morning
+"" colorscheme morning
 match OverLength /\%81v.\+/
 
 set autochdir
@@ -47,9 +53,9 @@ set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 set ttyfast
-" set mouse=a
+"" set mouse=a
 
-" autocmd BufWritePre * %s/\s\+$//e
-" autocmd BufEnter * silent! lcd %:p:h
+"" autocmd BufWritePre * %s/\s\+$//e
+"" autocmd BufEnter * silent! lcd %:p:h
 autocmd bufnewfile *.c so ~/c_template.txt
 autocmd bufnewfile *.cpp so ~/cpp_template.txt
