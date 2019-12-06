@@ -1,8 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/vsahu/work/imp_files/patches'
-let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/lib/isi_migrate/config'
-let g:netrw_dirhist_3='/home/vsahu/work/onefs/isilon/test-qa/tests/cli/domains/worm'
-let g:netrw_dirhist_4='/home/vsahu/work/onefs/isilon/test-qa/tests/worm'
-let g:netrw_dirhist_5='/home/vsahu/work/onefs/isilon/test-qa/lib/qa/siq'
-let g:netrw_dirhist_6='/home/vsahu/work/onefs/isilon/bin/isi_migrate/sworker'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/vsahu/work/onefs/isilon/lib/isi_cloud_api/ecs'
+let g:netrw_dirhist_2='/home/vsahu/work/onefs/isilon/lib/isi_cloud_api/google'

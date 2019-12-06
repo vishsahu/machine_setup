@@ -12,7 +12,7 @@
 #exec /bin/bash
 
 # this is for remote logins GUI opening (X11 forwarding)
-xhost +
+#xhost +
 
 source $HOME/.bashrc
 source $HOME/.vimrc

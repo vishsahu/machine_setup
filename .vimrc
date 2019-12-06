@@ -4,8 +4,12 @@ map <S-Enter> O<ESC>
 " Map f to format a paragraph
 map f gwip
 
+" update the buffer if it's been updated elsewhere. Checks one time after 4s of
+" inactivity in normal mode.
+set autoread
+au CursorHold * checktime
+
 set spell
-set tags=,tags;
 set nocompatible
 autocmd ColorScheme * highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 colorscheme molokai
@@ -47,11 +51,10 @@ set colorcolumn=80
 syntax on
 filetype on
 
-set tags=tags;/
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
+" Look for tag file in directory of current file, in current directory and up
+" until $WORK_DIR/work and stop on first hit.
+set tags=./tags,tags;$WORK_DIR/work
+
 set ttyfast
 "" set mouse=a
 

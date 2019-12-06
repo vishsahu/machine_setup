@@ -1,18 +1,10 @@
 HISTSIZE=1000
 #export PS1="\t \u@\h:\w$$(__git_ps1)\$\n"
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$$(__git_ps1)\$\n'
-#export PATH=$HOME/work/tools/backup/dinostor/ndmpTest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 #export LD_LIBRARY_PATH=/usr/local/lib
 export CSCOPE_EDITOR=vim
 export EDITOR=vim
 export WORK_DIR=/home/vsahu
-export QA=/usr/local/qa
-export TOOLS=/usr/local/tools
-export QALIB=$QA/lib
-export PERL5LIB=$QA/lib
-export PATH=$QA/bin:$QA/tests:$QA/linux/bin:$TOOLS:$PATH
-export PATH=$PATH:/usr/local/tools/idea-IC-192.5728.98/bin
-export PATH=$PATH:/usr/local/tools/clion-2019.2/bin
 
 source $HOME/git-prompt.sh
 
@@ -34,36 +26,16 @@ alias gri='git rebase -i'
 # office specific
 # ==================
 alias chrome='chromium-browser google-chrome --proxy-server="https://proxy-ip:proxy-port"'
-alias dvl='dt vcluster list'
-alias dvd='dt vcluster delete'
-alias docker='sudo docker'
 
 # path short-hands
 alias cdwt='cd $HOME/wiki/tasks'
-alias cdc='cd $WORK_DIR/work/tools/backup/dinostor/ndmpTest/bin'
 alias cdw='cd $WORK_DIR/work'
-alias cdw1='cd $WORK_DIR/work1'
 alias cdo='cd $WORK_DIR/work/onefs'
 alias cdd='cd $WORK_DIR/work/tech-doc/projects/lhotse/design'
 alias cdl='cd $WORK_DIR/work/onefs/isilon/lib'
 alias cdb='cd $WORK_DIR/work/onefs/isilon/bin'
-alias cdt='cd $WORK_DIR/work/onefs/isilon/test/syncIQ'
-alias pyt='cd $WORK_DIR/work/onefs/isilon/test-qa/tests/worm'
-alias wlib='cd $WORK_DIR/work/onefs/isilon/test-qa/lib/qa/worm'
 
 # remote login aliases
-alias rdsea='ssh vsahu@remotedev04.prod.sea1.west.isilon.com -X'
-alias rddur='ssh vsahu@remotedev05.prod.rdu1.west.isilon.com -X'
-alias vc100='ssh vsahu@10.25.70.118 -X'
-alias c1='ssh root@10.25.71.39'
-alias c2='ssh root@10.25.71.40'
-alias c3='ssh root@10.25.71.41'
-alias home='ssh vishal@10.13.41.37'
-alias work='ssh vsahu@10.203.107.15'
-alias esxvm='ssh vsahu@10.28.51.101 -Y'
-alias ducttape='ssh ducttape.sea1.west.isilon.com'
-alias qavmd='ssh vsahu@qavm-d05.prod.sea1.west.isilon.com'
-alias qavm='ssh vsahu@qavm01.prod.sea1.west.isilon.com'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -157,3 +129,5 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/ifs/home/vsahu/.sdkman"
 [[ -s "/ifs/home/vsahu/.sdkman/bin/sdkman-init.sh" ]] && source "/ifs/home/vsahu/.sdkman/bin/sdkman-init.sh"
+
+fish
